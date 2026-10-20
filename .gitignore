@@ -1,0 +1,54 @@
+# Python bytecode and local environments
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.venv/
+venv/
+env/
+.env
+
+# Packaging and test caches
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter and editor files
+.ipynb_checkpoints/
+.idea/
+.vscode/
+*.swp
+*~
+
+# Experiment output and logs
+logs/
+outputs/
+wandb/
+**/wandb/
+*.log
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Full language models and CellTok adapters are local runtime assets.
+model/LLM/Qwen2.5-7B-Instruct/
+model/LLM/CellTok-base/
+model/LLM/hub/
+
+# Reproducible public paper datasets are downloaded by scripts and are large.
+data/paper_evaluation/
+
+# Interrupted downloads and temporary files
+*.part
+*.parts/
+*.tmp
+
+scripts
+
+docs

@@ -1,0 +1,60 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "index_name": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "i": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "code": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "story": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "match": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "input_text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "output_text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "attention_mask": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "labels": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}
