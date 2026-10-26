@@ -1,0 +1,9 @@
+case,repeat,kind,keys_match,finite_max_abs_diff,outside_tolerance,nonfinite_mismatches,matched_nonfinite,passed
+A,1,per_pert,True,0.0,0,0,1,True
+A,1,aggregate,True,0.0,0,0,0,True
+B,1,per_pert,True,0.0005880318228985715,1,0,1,False
+B,1,aggregate,True,5.822097256413805e-06,0,0,0,True
+C,1,per_pert,True,0.0,0,0,1,True
+C,1,aggregate,True,0.0,0,0,0,True
+D,1,per_pert,True,0.0005880318228985715,1,0,1,False
+D,1,aggregate,True,5.822097256413805e-06,0,0,0,True
