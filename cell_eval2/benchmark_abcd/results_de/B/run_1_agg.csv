@@ -1,0 +1,17 @@
+metric,mean,agg
+de_wilcoxon_direction_precision,0.9805690101563083,mean
+de_wilcoxon_overlap_top100,0.7729527156774659,mean
+de_wilcoxon_sig_recall,0.9091810400284737,mean
+delta_mae,0.012587311990298323,mean
+delta_mse,0.0002903309186189615,mean
+delta_pearson,0.9822599604940402,mean
+expr_distance_unbiased,0.009425864437845448,mean
+expr_mae,0.012587311990298323,mean
+expr_mse,0.0002903309186189615,mean
+expr_mse_unbiased,-0.003673282313493989,mean
+expr_mse_unbiased_capped,-0.0033827308399174095,mean
+expr_mse_unbiased_capped_norm,-0.3588775185791481,ratio_of_sums
+expr_real_mass_ratio,0.9999999999704993,mean
+pds_cosine,1.0,mean
+pds_l1,1.0,mean
+pds_l2,1.0,mean

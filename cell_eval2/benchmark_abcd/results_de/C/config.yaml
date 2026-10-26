@@ -1,0 +1,61 @@
+metrics:
+- expr_mae
+- pds_l1
+- pds_l2
+- pds_cosine
+- delta_pearson
+- expr_mse
+- expr_mse_unbiased
+- expr_mse_unbiased_capped
+- expr_distance_unbiased
+- expr_real_mass_ratio
+- expr_mse_unbiased_capped_norm
+- delta_mse
+- delta_mae
+- de_wilcoxon_overlap_top100
+- de_wilcoxon_sig_recall
+- de_wilcoxon_direction_precision
+pert_col: perturbation
+control: control
+version: v2
+control_source: real
+input_type: counts
+max_counts_per_cell: 1000000.0
+target_sum: 1000000.0
+allow_discrete: false
+allow_fractional_counts: false
+autodetect_input_type: false
+validate_input: true
+filter:
+  filter_gene_min_cpm_cell: 5.0
+num_threads: -1
+device: cpu
+pert_chunk: 512
+outdir: null
+cache_real: null
+cache_pred: null
+cache_strict: false
+discrimination:
+  distance: cosine
+  rank_denominator: n-1
+  exclude_target_gene: true
+  embed_key: null
+  tie_policy: midrank
+  exclusion_scope: panel
+de:
+  p_adj_threshold: 0.05
+  min_abs_log2fc: 0.0
+  sort_by: abs_log2_fold_change
+  method: wilcoxon
+  nan_lfc_policy: mask
+  backend: pdex
+  replicate_col: null
+  mean_calc: arithmetic
+  epsilon: 1.0e-09
+  clip_value: null
+  fdr_scope: per_pert
+  auc_pval_floor: min_nonzero
+  auc_pval_floor_value: 1.0e-10
+gather_threads: 8
+target_gene_map: null
+bulk_target_sum: 50000.0
