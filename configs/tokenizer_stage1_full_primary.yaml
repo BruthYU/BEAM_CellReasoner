@@ -1,0 +1,47 @@
+# VQ-VAE: full-primary counts, AdamW, 4 GPUs (512 global / 128 per GPU).
+seed: 2024
+data:
+  train_manifest: data/stage1/full_primary/fit_full_primary_20261026.csv
+  train_split: train
+  validation_manifest: data/stage1/full_primary/fit_full_primary_20261026.csv
+  validation_split: test
+  genes: data/5000_gene_names.csv
+  expected_genes: 5000
+  target_sum: 10000.0
+  log_transform: log1p
+  cellstream_read_threads: 1
+  max_open_archives: 1
+  local_cache_dir: /tmp/celltok-full-primary-20261026
+  num_workers_per_rank: 2
+model:
+  data_dim: 5000
+  n: 32
+  codebook_dim: 8
+  n_codebooks: 256
+  encoder_hidden_dim: [1600, 1024, 800]
+  decoder_hidden_dim: [800, 1024, 1600]
+  beta: 10.0
+  gamma: 5.0
+  dropout_rate: 0.2
+  mode: vqvae
+training:
+  epochs: 50
+  global_batch_size: 512
+  optimizer: adamw
+  scheduler: warmup_cosine
+  learning_rate: 0.0003
+  weight_decay: 0.0005
+  warmup_ratio: 0.03
+  min_lr_ratio: 0.1
+  gradient_clip_norm: null
+  eval_every_steps: 100
+  save_every_epochs: 5
+  output_dir: outputs/tokenizer/adamw_full_primary
+evaluation:
+  label_column: cell_type
+  max_cells: 10000
+  batch_size: 256
+  random_seed: 2024
+  mmd_max_cells: 2000
+  mmd_bandwidth_sample: 500
+  pca_components: 50
