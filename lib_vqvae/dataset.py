@@ -17,7 +17,7 @@ class SingleCellDataset(Dataset):
     
     def __getitem__(self, idx):
         if issparse(self.adata.X):
-            x = self.adata.X[idx].A.squeeze()
+            x = self.adata.X[idx].toarray().squeeze()
         else:
             x = self.adata.X[idx].squeeze()
             

@@ -1,66 +1,92 @@
-# CellTok data inventory
+# Stage1数据接口
 
-Audited against CellTok bioRxiv v1 (doi: `10.1101/2025.10.22.684047`) on
-2026-10-20.
+本PR只提交 `5000_gene_names.csv`，不提交表达矩阵、训练清单、权重或个人路径。
+词表的顺序就是模型的5000维输入顺序。源H5AD通过分块读取转换成稀疏counts归档，
+loader按batch读取并执行 `log1p(10000 * counts / aligned_5000_gene_sum)`。
+零表达行保持0；缺失基因补0，重复源基因按映射累加。归一化分母是对齐后的5000基因。
 
-## What is present
+## 本地数据位置
 
-- `5000_gene_names.csv`: the 5,000-gene alignment vocabulary used by the cell
-  tokenizer.
-- `blood/`: the repository's 4,755-cell tutorial example, including the source
-  H5AD, 32-code representation, complete annotation and generation Arrow
-  shards, and a 100-cell generated result.
-- `paper_evaluation/`: publicly identifiable source datasets used in the paper,
-  fetched by `scripts/fetch_paper_data.sh`. `SHA256SUMS` records the downloaded
-  bytes. It currently contains 37 verified source files (4.968 GiB): 430,903
-  small-intestine cells, 106,136 brain cells, 126,564 blood/airway cells,
-  116,313 GSE171524 lung cells, and the GSE135893 source matrix. These are
-  source datasets, not the unpublished CellTok train/test splits or tokenized
-  derivatives.
+现有共享实验目录下的数据为：
 
-## Paper stages and reproducibility status
-
-| Stage | Paper data | Local status |
-| --- | --- | --- |
-| Cell tokenizer training | 68M filtered CELLxGENE cells; 63.8M train / 4.7M test by study | **Not reproducible exactly.** The paper does not publish the study list, frozen CELLxGENE snapshot, filtering pipeline, or split manifest. |
-| CellTok-base training | 5M cell-code/text pairs plus an unnamed Hugging Face general corpus (1:1) | **Missing and not reproducible exactly.** GPT-4o-generated descriptions, sample IDs, and the text-corpus ID are not published. |
-| Tokenizer evaluation | GSE135893 and GSE171524 | Public source data is under `paper_evaluation/`. |
-| Cell annotation/generation | small intestine (Kong 2023), brain (Leng 2021), blood (Szabo 2021); paper uses 10k train + 1k test per dataset | Public source data is under `paper_evaluation/`; the paper's exact sampled splits are not published. |
-| Population annotation and disease state | GSE171524 with named donor splits | Public source H5AD is under `paper_evaluation/GSE171524/`; derived groups and tokenized prompts still need construction. |
-| Cell-cell communication | GSE171524, CellChat labels, 73 pathways | Source H5AD is present; CellChat outputs and sampled source-target groups are not published. |
-| Tutorial-only spatial CCC | Visium HD colorectal-cancer inputs referenced by tutorial 8 | Missing; the notebook contains private paths and no public accession. |
-| Tutorial-only trajectory | `trajectory_adata.h5ad` referenced by tutorial 9 | Missing; the notebook gives no source accession. |
-
-The CELLxGENE downloads are pinned to the dataset-version URLs available on
-2026-10-20. They are the closest authoritative public sources, but cannot be
-claimed byte-identical to the unreleased 2025 training/evaluation snapshot.
-The GSE135893 matrix has 33,694 genes and 220,213 barcode columns; its supplied
-IPF metadata contains 114,396 QC/annotated cells, consistent with the source
-study's reported analyzed subset.
-
-Authoritative source records:
-
-- CellTok paper: <https://doi.org/10.1101/2025.10.22.684047>
-- Small intestine: <https://cellxgene.cziscience.com/collections/5c868b6f-62c5-4532-9d7f-a346ad4b50a7>
-- Brain: <https://cellxgene.cziscience.com/collections/180bff9c-c8a5-4539-b13b-ddbc00d643e6>
-- Blood: <https://cellxgene.cziscience.com/collections/29f92179-ca10-4309-a32b-d383d80347c1>
-- GSE171524: <https://cellxgene.cziscience.com/collections/e4c9ed14-e560-4900-a3bf-b0f8d2ce6a10>
-- GSE135893: <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE135893>
-
-## Validation
-
-Run:
-
-```bash
-bash scripts/validate_paper_data.sh
+```text
+data/stage1/full_primary/
+  fit_full_primary_20261026.csv
+  cellstream/
+  cellstream_large_shards/
 ```
 
-To resume downloads on this GPFS cluster through its faster local route, use:
+正式清单包含473个train归档（54,976,407 cells）和18个test归档
+（3,389,742 cells），train/test的study不重叠；另有36个benchmark归档不纳入训练。
+不要直接glob存储目录：这会混入隔离数据或遗漏分片。Non-primary增量未并入该训练协议。
+
+这些数字描述本地冻结协议，不是作者精确63.8M/4.7M划分。数据需由用户自行准备；
+脚本默认的manifest路径只是约定，并不表示仓库中包含这些数据。
+
+## 新数据转换与清单
+
+从仓库根目录执行：
 
 ```bash
-CELLTOK_PROXY_URL=http://httpproxy-headless.kubebrain.svc.pjlab.local:3128 \
-  bash scripts/fetch_paper_data.sh
+TASK=convert INPUT=/path/source.h5ad OUTPUT=/path/study.csad \
+  SESSION=celltok-convert bash scripts/data.sh
 ```
 
-The validator checks expected files and sizes, gzip integrity, HDF5 readability,
-AnnData dimensions, all Arrow shard references, and SHA-256 checksums.
+默认筛选 `obs.is_primary_data=True`，缺少该字段则保留全部行，并记录来源证据。
+`raw-or-X` 优先取raw，否则取X；只有有限、非负、整数counts才能写入counts归档，
+不能把已经log归一化的X当作counts。转换器还记录词表SHA和筛选/存储方式，供训练前审计。
+`CELL_SELECTION=non-primary` 或 `all` 可生成其他数据，但本次训练入口要求primary来源。
+
+CSV示例（归档路径相对CSV所在目录）：
+
+```csv
+dataset_id,study_id,split,selected_cell_count,cellstream_path
+study-a,study-a,train,12000,cellstream/study-a.csad
+study-b,study-b,test,3000,cellstream/study-b.csad
+```
+
+按study划分，而不是在同一study内随机分行。`selected_cell_count`须等于该归档的行数；
+归档需由本转换器生成，或具有等价的 `uns['celltok_stage1']` 来源、词表SHA及primary证据。
+
+大H5AD可按筛选后的行范围转换为多个归档；直接调用同一转换器：
+
+```bash
+PYTHONPATH=src:. python -m celltok data convert \
+  --input /path/source.h5ad --output /path/shard0.csad \
+  --matrix raw-or-X --storage counts --block-rows 8192 \
+  --selected-cell-start 0 --selected-cell-stop 100000
+```
+
+`--selected-cell-start/stop`是筛选后细胞序列的左闭右开范围。修改范围与输出路径即可处理下一片。
+`data freeze`可从原清单与分片清单生成只包含完整数据集的新清单，校验连续覆盖和study隔离，
+不会覆盖已冻结清单。分片清单保留 `dataset_id/study_id/split/cell_selection`，并记录
+`selected_cell_start/selected_cell_stop/selected_cell_count/source_dataset_selected_cell_count`。
+
+```bash
+TASK=freeze MANIFEST=/path/source.csv SHARD_MANIFEST=/path/shards.csv \
+  OUTPUT=/path/complete.csv bash scripts/data.sh
+TASK=validate MANIFEST=/path/complete.csv OUTPUT=outputs/data/validation.json bash scripts/data.sh
+```
+
+## 读取与缓存
+
+```python
+from lib_vqvae.cellstream_dataset import CellStreamDataset
+
+dataset = CellStreamDataset.from_manifest(
+    "data/stage1/full_primary/fit_full_primary_20261026.csv",
+    split="train", expected_genes=5000,
+    target_sum=10000, log_transform="log1p",
+    local_cache_dir="/tmp/celltok-training", read_threads=1,
+    max_open_archives=1,
+)
+batch = dataset.get_batch_numpy([0, 1])  # [2, 5000], float32
+dataset.close()
+```
+
+CellStream packed reader需要支持mmap的文件系统。本地集群的共享挂载需先复制归档至节点本地缓存，
+全量train/test约需55.56 GB缓存空间；缓存会核对容量并复用已有文件。
+训练前审计全部归档的shape、词表顺序、counts和primary证据，并检查train/test study隔离。
+
+历史冻结CSV内的三个旧Stage1根路径由 `lib_vqvae.paths.resolve_data_path` 映射到新目录；
+不需要建立旧目录软链接。新数据建议直接写规范路径。
