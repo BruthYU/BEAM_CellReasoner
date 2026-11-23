@@ -1,0 +1,4 @@
+# Isolated overlay required by install_fast_delta() on Hopper (H100/H200).
+# Install with --no-deps --target, never into the base Torch environment.
+# Torch 2.9.1 declares triton==3.5.1; the validated Qwen kernel override uses 3.7.1.
+triton==3.7.1

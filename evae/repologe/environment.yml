@@ -1,0 +1,15 @@
+name: sc-evae
+channels:
+  - defaults
+variables:
+  PYTHONNOUSERSITE: "1"
+dependencies:
+  - python=3.12
+  - pip
+  # conda-pack 0.8.1 imports pkg_resources, removed in newer setuptools.
+  - setuptools=80.9.0
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu128
+      - torch==2.9.1+cu128
+      - conda-pack==0.8.1
+      - .
