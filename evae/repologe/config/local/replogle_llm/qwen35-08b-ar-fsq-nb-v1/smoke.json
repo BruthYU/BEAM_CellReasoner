@@ -1,0 +1,22 @@
+{
+  "artifacts": "artifacts/replogle_llm/qwen35-08b-ar-fsq-nb-v1",
+  "node": null,
+  "gpus": 2,
+  "seed": 420,
+  "per_device_batch_size": 4,
+  "gradient_accumulation_steps": 1,
+  "eval_batch_size": 8,
+  "learning_rate": 3e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.03,
+  "validation_cells_per_condition": 2,
+  "logging_steps": 5,
+  "output_dir": "outputs/replogle_llm/qwen35-08b-ar-fsq-nb-v1/smoke",
+  "max_steps": 50,
+  "train_cell_limit": 128,
+  "eval_steps": 25,
+  "save_steps": 25,
+  "save_only_model": true,
+  "cpu_threads_per_process": 8,
+  "charged_group": "beam_gpu_pool"
+}

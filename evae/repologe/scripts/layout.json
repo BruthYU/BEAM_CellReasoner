@@ -1,0 +1,842 @@
+{
+  "version": 1,
+  "archive": "artifacts/repository_cleanup/20261123_scripts_layout",
+  "files": {
+    "scripts/align_replogle_esm_symbols.py": {
+      "new": "scripts/data/align_replogle_esm_symbols.py",
+      "original_sha256": "810edf0beb8b5c77e1217d5b15f14392b26f11779c23be52d46df1d7476f9183",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/align_replogle_esm_symbols.py",
+      "new_sha256": "7d744f0431187886a7a0e688fc5ffc2c6951d0e12b270ceec9f715d1a53d1f69"
+    },
+    "scripts/audit_replogle_control_pds_cache.py": {
+      "new": "scripts/checks/audit_replogle_control_pds_cache.py",
+      "original_sha256": "a65e6c8065d36346760118e8ea9457d0b130cc4236cfa17dc1b1050adf42a0ae",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/audit_replogle_control_pds_cache.py",
+      "new_sha256": "4939633f625bcc1c19308b728dc42bb6c287d6106312136a24c676fe2170011c"
+    },
+    "scripts/audit_replogle_stage1_raw.py": {
+      "new": "scripts/checks/audit_replogle_stage1_raw.py",
+      "original_sha256": "4d4c55667eaa60ea5f2182fb7efbbc7241dcf27d78199d0c89cb17f5df0dcd2a",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/audit_replogle_stage1_raw.py",
+      "new_sha256": "b24e3da9e6632d88c13bf423362115d5a36ee4937e01f1a194e58d40f0054558"
+    },
+    "scripts/audit_replogle_stage2_pds.py": {
+      "new": "scripts/checks/audit_replogle_stage2_pds.py",
+      "original_sha256": "3516f8352ff8e4e934f147d916e5d786ac7b9eb9ca3d9f969f96ca25755d7288",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/audit_replogle_stage2_pds.py",
+      "new_sha256": "343f9fdbe31afee32a90d68980a26bb7141143670791a3604538ed6d1d55328d"
+    },
+    "scripts/cache_replogle_nb_tokens.py": {
+      "new": "scripts/data/cache_replogle_nb_tokens.py",
+      "original_sha256": "5da0b91c1f7bd1d33acfe696f00286d40cdc1a8d06bb8a3ce764346d1564bbe5",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/cache_replogle_nb_tokens.py",
+      "new_sha256": "d3576541335cd9ae2b5f773056b07d3609ac1319e023c2146210af10677948fb"
+    },
+    "scripts/check_environment.py": {
+      "new": "scripts/environment/check_environment.py",
+      "original_sha256": "832a071104df5ed28e77e46ac44414a14e5b957bceb24909ef89c002e5eedf0c",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/check_environment.py",
+      "new_sha256": "27906cad431aec705c76e8298b614209802d729932626901fbe4697354838c55"
+    },
+    "scripts/check_replogle_control_ab.py": {
+      "new": "scripts/checks/check_replogle_control_ab.py",
+      "original_sha256": "021813724f6ac9e558a852f24f2bfdddc0613189ce339eac5a5cbad4272031f1",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/check_replogle_control_ab.py",
+      "new_sha256": "17f65c8c3aa97374ddf1dd6357436b85bc840bfb8a03d7208be319aa1fab2736"
+    },
+    "scripts/check_replogle_control_baseline_eval.py": {
+      "new": "scripts/checks/check_replogle_control_baseline_eval.py",
+      "original_sha256": "f5ccb3b6d993c5f57ed72b93faaf7579241cac11bb17f2a6eaff47cc56424097",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/check_replogle_control_baseline_eval.py",
+      "new_sha256": "4315fcd230956c3b9085623b1617a78199127112c8a176e43bad1e871ebdf42c"
+    },
+    "scripts/check_replogle_control_c.py": {
+      "new": "scripts/checks/check_replogle_control_c.py",
+      "original_sha256": "af4b1133f5180f85dc2da9e55530427b147c8e08d8b0f80fc80f5155ba5f234b",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/check_replogle_control_c.py",
+      "new_sha256": "e8c34cc895273f243358f422c48ccd26d4aed46285b9b0e5ca708cd929fbe9c9"
+    },
+    "scripts/check_replogle_control_c_resume.py": {
+      "new": null,
+      "original_sha256": "ae87136206bf43998f559bda68377ec6b6468cc48b1aefa5372f641a4cb4b609",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/check_replogle_control_c_resume.py",
+      "retired_reason": "Completed one-off C checkpoint/resource migration"
+    },
+    "scripts/check_replogle_control_eval.py": {
+      "new": "scripts/checks/check_replogle_control_eval.py",
+      "original_sha256": "1faeb315f13ae1312d9e01d0dba55f27451b79dd18be1aa9012368832c9b2810",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/check_replogle_control_eval.py",
+      "new_sha256": "960fed7e12d4a0515c805648d72a28471ad89283d877e90f7b5ad227ab3d2112"
+    },
+    "scripts/check_replogle_distributed.py": {
+      "new": null,
+      "original_sha256": "815044323d33726c57a2e5e41ca16f1bb1922fd777636f0d233158558c5a3156",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/check_replogle_distributed.py",
+      "retired_reason": "Unused fixed-two-GPU setup probe"
+    },
+    "scripts/check_replogle_llm_cpu.py": {
+      "new": "scripts/checks/check_replogle_llm_cpu.py",
+      "original_sha256": "f459fe141e0b30aed4464309134ca0b27970061e028c1849249dcb6f61d7f26f",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/check_replogle_llm_cpu.py",
+      "new_sha256": "69fa3dd3f0807f2b14f60e2386fd936d8164f40a6a50c3030b48728d91a8cb4d"
+    },
+    "scripts/check_replogle_llm_generation.py": {
+      "new": "scripts/checks/check_replogle_llm_generation.py",
+      "original_sha256": "bc3a788017c1011ea12bfb77c579c75a5580bb4c577e23e109a6f73d90c3ecaf",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/check_replogle_llm_generation.py",
+      "new_sha256": "fe5241a075f819a02b666f98e39b5edf837f0b34106532bc9bb6a7e5dac3ba67"
+    },
+    "scripts/encode_replogle_text_conditions.py": {
+      "new": null,
+      "original_sha256": "15458609c6e6ef3b3f08e2d2a3249b45cbb3ec8d1b4c536f84cd11a1d2feaf21",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/encode_replogle_text_conditions.py",
+      "retired_reason": "Cancelled separate text-embedding route"
+    },
+    "scripts/eval.py": {
+      "new": "scripts/eval.py",
+      "original_sha256": "a1a7cc72edd0423a6603d0ad4d7c5354a23b77f6fd2d1e8e17ef009b2e9fd48a",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/eval.py",
+      "new_sha256": "a1a7cc72edd0423a6603d0ad4d7c5354a23b77f6fd2d1e8e17ef009b2e9fd48a"
+    },
+    "scripts/eval_pfizer.py": {
+      "new": "scripts/eval_pfizer.py",
+      "original_sha256": "efeb8ad2a340c93dafbd9c69e0d87c993601f0f72edd99d93862226e7f62e3b2",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/eval_pfizer.py",
+      "new_sha256": "efeb8ad2a340c93dafbd9c69e0d87c993601f0f72edd99d93862226e7f62e3b2"
+    },
+    "scripts/eval_replogle_control_ab.py": {
+      "new": null,
+      "original_sha256": "e6942db7e49da2ff52b87c2d147362d38450a396de9cd65184b5955f7e5170f2",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/eval_replogle_control_ab.py",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/evaluation/eval_replogle_control_ab.py",
+      "pre_consolidation_sha256": "76a60e0aa409c4a2168824976fe798eb19b7f6a26b074ae52828b44f525bc610",
+      "retired_path": "scripts/evaluation/eval_replogle_control_ab.py",
+      "retired_reason": "Unified evaluation entrypoint; active imports/commands migrated; archived 2026-11-23",
+      "retirement_archive": "artifacts/repository_cleanup/20261123_eval_entry_cleanup/scripts/evaluation/eval_replogle_control_ab.py",
+      "retirement_sha256": "b2df9c9ec9204ffcd7cf2fff0f2c4fa636880f7058e3d7740330100d0a97bb22"
+    },
+    "scripts/eval_replogle_control_baseline.py": {
+      "new": null,
+      "original_sha256": "5d725d410d0d9409f0d5a69de8cfeb4fdfaa3d0550d592484b463e8953c31a80",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/eval_replogle_control_baseline.py",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/evaluation/eval_replogle_control_baseline.py",
+      "pre_consolidation_sha256": "da3a74e620a8c71e3e81dfe201acd5ca8227d9c51b87770dab1ad72d9da143ac",
+      "retired_path": "scripts/evaluation/eval_replogle_control_baseline.py",
+      "retired_reason": "Unified evaluation entrypoint; active imports/commands migrated; archived 2026-11-23",
+      "retirement_archive": "artifacts/repository_cleanup/20261123_eval_entry_cleanup/scripts/evaluation/eval_replogle_control_baseline.py",
+      "retirement_sha256": "5ece5d353b31abc1fdc1862ce14413f42112594d17989059bbfd0fbd365bb991"
+    },
+    "scripts/eval_replogle_control_c.py": {
+      "new": null,
+      "original_sha256": "e9f22d36d5d0d9d7d06656339274b39502785ed7f5dfca5c646d055105f27ce4",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/eval_replogle_control_c.py",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/evaluation/eval_replogle_control_c.py",
+      "pre_consolidation_sha256": "d28b7f85369359b33284e7679392b03020a22f417a91d3a36b62cb9157a29174",
+      "retired_path": "scripts/evaluation/eval_replogle_control_c.py",
+      "retired_reason": "Unified evaluation entrypoint; active imports/commands migrated; archived 2026-11-23",
+      "retirement_archive": "artifacts/repository_cleanup/20261123_eval_entry_cleanup/scripts/evaluation/eval_replogle_control_c.py",
+      "retirement_sha256": "936831fbc796d0b855ac8cc7d550b00139162e2991e74f691fa7286ae9a9c4fa"
+    },
+    "scripts/eval_replogle_llm.py": {
+      "new": null,
+      "original_sha256": "689c9f9bf6eb0ebd4ae59341f1337914851823b75b708d353b5077e5218e78ce",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/eval_replogle_llm.py",
+      "retired_path": "scripts/evaluation/eval_replogle_llm.py",
+      "retired_reason": "Unified evaluation entrypoint; active imports/commands migrated; archived 2026-11-23",
+      "retirement_archive": "artifacts/repository_cleanup/20261123_eval_entry_cleanup/scripts/evaluation/eval_replogle_llm.py",
+      "retirement_sha256": "e641124c1d641f67c9fc826a49645e159ebc9d46cf76149f1094400070387066"
+    },
+    "scripts/handoff_replogle_control_c.py": {
+      "new": null,
+      "original_sha256": "21963797a5cf7d7fea98765ddf7a61a8b01d7ca6ff054575430b654465fd13b2",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/handoff_replogle_control_c.py",
+      "retired_reason": "Completed one-off C checkpoint/resource migration"
+    },
+    "scripts/launch_worker.sh": {
+      "new": "scripts/environment/launch_worker.sh",
+      "original_sha256": "138388745ed3ae89078d7f53bdd71ef64c5d010b9b2f2f4dd2048fc0a3788045",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/launch_worker.sh",
+      "new_sha256": "516d26dba8f5de0d5a156ef127c7625c7e5b42a133ea2a27bee65c2a482cbc1a"
+    },
+    "scripts/pack_environment.sh": {
+      "new": "scripts/environment/pack_environment.sh",
+      "original_sha256": "f38f058e44cd4099faa92a67bd3d2f08e77a84b88c5dbd1d9c6a1ac5284b01fd",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/pack_environment.sh",
+      "new_sha256": "d17f070001c110e33b53ec35272443d3eaacd7eb807319cededa66148fbddee6"
+    },
+    "scripts/plot_replogle_control_ab_loss.py": {
+      "new": "scripts/analysis/plot_replogle_control_ab_loss.py",
+      "original_sha256": "d4f92398b5c58004c456c70fa4e8552cce92606dafce4da0faa5645a4c35d6e7",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/plot_replogle_control_ab_loss.py",
+      "new_sha256": "f58b7325b1f97420048cd807ffed6696a7498de8c050190ca7f40f8087d84dd5"
+    },
+    "scripts/plot_replogle_control_c_loss.py": {
+      "new": "scripts/analysis/plot_replogle_control_c_loss.py",
+      "original_sha256": "2321eea77ae966a7c523995c8b3eaa1b954e972257486895b0d7038853a03cb3",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/plot_replogle_control_c_loss.py",
+      "new_sha256": "7e635617715308da78c6e126f0600b4592922099b36bbfe7b342432e687e9ba3"
+    },
+    "scripts/plot_replogle_llm_loss.py": {
+      "new": "scripts/analysis/plot_replogle_llm_loss.py",
+      "original_sha256": "806512fd658c5ab183333a9ff3d99e54555eb991fd19aa11dcd4f79d97ed62bd",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/plot_replogle_llm_loss.py",
+      "new_sha256": "0b08b2a7887a08d5ff67555b16b7c08c2642909fc1ddbcd17bda41f51caa36bc"
+    },
+    "scripts/plot_replogle_stage1_loss.py": {
+      "new": "scripts/analysis/plot_replogle_stage1_loss.py",
+      "original_sha256": "7d20afe90a6a02bbca9f5f454e0467accbac2dc2134a2587e20f616798df2702",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/plot_replogle_stage1_loss.py",
+      "new_sha256": "b28c25909237964c1d1ecd358be7b0a82269c225b7475a5edc02a1b412a1a3a8"
+    },
+    "scripts/prepare_replogle_control_ab.py": {
+      "new": "scripts/data/prepare_replogle_control_ab.py",
+      "original_sha256": "1fccf0c08dce776a8ca3c97cf7917d85e15c3e5e82f6bd57df845bbfe6825c5f",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/prepare_replogle_control_ab.py",
+      "new_sha256": "2b22884d258f0b56ce8b32b68dd6aaadaf936d1830f567eb02156bd17cc009c2"
+    },
+    "scripts/prepare_replogle_control_baseline.py": {
+      "new": "scripts/data/prepare_replogle_control_baseline.py",
+      "original_sha256": "ef296f59c0ed5c876c6db1e9fd79ea4a87617023fb272b97db00eecbc8a1e0d4",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/prepare_replogle_control_baseline.py",
+      "new_sha256": "83d089a5b9d42f9ebcb3fca0524fc296c78279c2d46ef5f82a13ca69c7eb7236"
+    },
+    "scripts/prepare_replogle_control_c_eval.py": {
+      "new": "scripts/data/prepare_replogle_control_c_eval.py",
+      "original_sha256": "120949da448bf555e2563d5d93f072ddb1ac597c6155c129f698e7c2573395dc",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/prepare_replogle_control_c_eval.py",
+      "new_sha256": "ff6b68843f83e3864822bc08e451caf9206d2dd62cc0d1376dfd17026111e83f"
+    },
+    "scripts/prepare_replogle_control_c_resume.py": {
+      "new": null,
+      "original_sha256": "d2995de96917ed83bef57828cf798ccdb1fa5f2798954c553314f47f08f1203e",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/prepare_replogle_control_c_resume.py",
+      "retired_reason": "Completed one-off C checkpoint/resource migration"
+    },
+    "scripts/prepare_replogle_llm.py": {
+      "new": "scripts/data/prepare_replogle_llm.py",
+      "original_sha256": "00ce5e2ef47e98c6626526efb878147a9dda46161b0bed77d9abe27210406a93",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/prepare_replogle_llm.py",
+      "new_sha256": "9a90df613f65b7cbc467ce0796fd7aa9df60d8807d53aef007b893032ade83e1"
+    },
+    "scripts/prepare_replogle_llm_model.py": {
+      "new": "scripts/data/prepare_replogle_llm_model.py",
+      "original_sha256": "bc07ca4597d36d79b4cb7d61cc8952a0fbd2b4476da32f04cfb5e23149a70b4d",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/prepare_replogle_llm_model.py",
+      "new_sha256": "b58fd19a7385204382f3658edf85045871fc1c40d64742afe04f3e86fa06bd62"
+    },
+    "scripts/prepare_replogle_stage1.py": {
+      "new": "scripts/data/prepare_replogle_stage1.py",
+      "original_sha256": "14ec2ddae407291fbe1e159b314dfd1f7900ab6f702f3e01d564303f63052d7d",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/prepare_replogle_stage1.py",
+      "new_sha256": "87cd34776ef96f9a7a1abcf86520d244eeced8837a4185454aa84d93b423de25"
+    },
+    "scripts/prepare_replogle_stage2.py": {
+      "new": "scripts/data/prepare_replogle_stage2.py",
+      "original_sha256": "437f25a9139e38ba15240303f02140957e127e1ab33674e8df872d27e324ded0",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/prepare_replogle_stage2.py",
+      "new_sha256": "2e6808198cf6e43743b996a2fbda6672b1bdcd3d087836f4fe7ada20fc1df6a9"
+    },
+    "scripts/prepare_replogle_text_conditions.py": {
+      "new": "scripts/data/prepare_replogle_text_conditions.py",
+      "original_sha256": "f9b92968955bdd2555f47da4ef641be08b1e59cb1e685bba46066f28c3131477",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/prepare_replogle_text_conditions.py",
+      "new_sha256": "1fe1cc0a62c01fe4236d7c2a2426d2a7b41cc3acc432ba2e7d29ddd3bcaae1c8"
+    },
+    "scripts/replogle_control_baseline.py": {
+      "new": "scripts/lib/replogle_control_baseline.py",
+      "original_sha256": "8eee1c1fab5a98f59504571a3b57cae833dda54f228406532b3d51d65d34e6e5",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/replogle_control_baseline.py",
+      "new_sha256": "06b71b03c8598ab298f4dec5e986c8f1c02504c9e751c4e8e733fae595c25877"
+    },
+    "scripts/replogle_control_c.py": {
+      "new": "scripts/lib/replogle_control_c.py",
+      "original_sha256": "5e16ca0fdf3fcdf38494b1055158941315ab455e8dabc40e72e8360042c9b3f0",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/replogle_control_c.py",
+      "new_sha256": "2918974fc3f2ce5de24361d41fa113ac58846f603b445088649a301c392078ae"
+    },
+    "scripts/replogle_control_c_eval_common.py": {
+      "new": "scripts/lib/replogle_control_c_eval_common.py",
+      "original_sha256": "91b237a85eb595541010ae2707da7b3d3414454364531e64c932e333d019c12a",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/replogle_control_c_eval_common.py",
+      "new_sha256": "31fbfb5cadb753f5c648b792026f14d19370df96a953827d072c0927d8d30c67"
+    },
+    "scripts/replogle_control_c_resume.py": {
+      "new": null,
+      "original_sha256": "152b11968e5be5d54b8a303b14fdffc7df835b5c4372e806e7c4809347ff3261",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/replogle_control_c_resume.py",
+      "retired_reason": "Completed one-off C checkpoint/resource migration"
+    },
+    "scripts/replogle_control_common.py": {
+      "new": "scripts/lib/replogle_control_common.py",
+      "original_sha256": "08cdfa639b492bab8c1b35904b10c185bd002fa72ea64a8c3d04c20c362d3e3a",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/replogle_control_common.py",
+      "new_sha256": "2d987572122eb88fb4990ea178a152ae191549ce209d73e7a3b57bde6e468926"
+    },
+    "scripts/replogle_control_eval_common.py": {
+      "new": "scripts/lib/replogle_control_eval_common.py",
+      "original_sha256": "43f851aa0495b4549be270ca3677b6cc6f4de2fab51b9a773350db85f2b01049",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/replogle_control_eval_common.py",
+      "new_sha256": "22f8c6b54063769a17fb4d6eb72e97aaf818286fbdfa751d817d77e1e1c2f5d1"
+    },
+    "scripts/replogle_experiment.py": {
+      "new": "scripts/lib/replogle_experiment.py",
+      "original_sha256": "d177400a70158a63870bb57ebeeee096e74174306ce0d7d375d1492fc49ba10f",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/replogle_experiment.py",
+      "new_sha256": "ea347baba556628e8226e971a4a5bb32eded656f1d2ed9d477db6630d81c3f02"
+    },
+    "scripts/replogle_experiment_v1.py": {
+      "new": "scripts/lib/replogle_experiment_v1.py",
+      "original_sha256": "77628bd5921f3d6a2abae634681a17a8bdb93256fd3d98ffb94caa6d356e6820",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/replogle_experiment_v1.py",
+      "new_sha256": "4db3152d1a1b20873c9396cc045dfd3e64a9c959666dcbdea3c65a613be1e1fc"
+    },
+    "scripts/replogle_llm_common.py": {
+      "new": "scripts/lib/replogle_llm_common.py",
+      "original_sha256": "cc8c1981b36cc102f23eacd31e3cefd06801d2bd0da0a8cb1f5fd3e07fdfc2ac",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/replogle_llm_common.py",
+      "new_sha256": "de33f1cee9f7c557dba622da3984afbe1243afc1971f7e28daad5dc3cded3373"
+    },
+    "scripts/run_replogle_control_ab_worker.sh": {
+      "new": "scripts/workers/run_replogle_control_ab_worker.sh",
+      "original_sha256": "626690d17246d21f24d7d50f6f3aeb6925ef5a4a418c0066bd342914fbc44b96",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/run_replogle_control_ab_worker.sh",
+      "new_sha256": "df0890de1f7a6fd1fee585bf7849a3a91968f6dcf18e35b495dd4f19598626cd",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/workers/run_replogle_control_ab_worker.sh",
+      "pre_consolidation_sha256": "939106ed7e4f11af66cd62348aa226fc1b05fc54734d570e7a67326509305c0c"
+    },
+    "scripts/run_replogle_control_baseline_eval.sh": {
+      "new": null,
+      "original_sha256": "13fd0500a5a0c48c61ffe6e076d104a3011f009f2ac3c1e4ac22e3abebbd62ae",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/run_replogle_control_baseline_eval.sh",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/workers/run_replogle_control_baseline_eval.sh",
+      "pre_consolidation_sha256": "836fa29f549e2605e9d83c44ac3d55c85c8edb25acc2cd49a0805b59b0598ae9",
+      "retired_path": "scripts/workers/run_replogle_control_baseline_eval.sh",
+      "retired_reason": "Unified evaluation entrypoint; active imports/commands migrated; archived 2026-11-23",
+      "retirement_archive": "artifacts/repository_cleanup/20261123_eval_entry_cleanup/scripts/workers/run_replogle_control_baseline_eval.sh",
+      "retirement_sha256": "615802e64a767654b36d0362498929b6b7c87882f1b3c05868c5255b69d7b2c1"
+    },
+    "scripts/run_replogle_control_baseline_worker.sh": {
+      "new": "scripts/workers/run_replogle_control_baseline_worker.sh",
+      "original_sha256": "0683a1b512300d69f39e968e06b9523a5e05a616aa1e85e1be10a5922f8c1148",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/run_replogle_control_baseline_worker.sh",
+      "new_sha256": "d1e1bdac16fecebc585322bbecdc2a40e390a2880145cde2785e968ba3acab1c",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/workers/run_replogle_control_baseline_worker.sh",
+      "pre_consolidation_sha256": "4f59bfffa3e427ff32493b4f51629da16a66d656d1d5c66e4fa38199c0ff814b"
+    },
+    "scripts/run_replogle_control_c_eval_worker.sh": {
+      "new": null,
+      "original_sha256": "6bfe81c8a932d5dd1c7faa36e9356498d872e9cfa928e31063c9e724d36a5478",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/run_replogle_control_c_eval_worker.sh",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/workers/run_replogle_control_c_eval_worker.sh",
+      "pre_consolidation_sha256": "2c9e95668db6419d20d1caa05539e043fd135cfabc48059681d0451be40be24c",
+      "retired_path": "scripts/workers/run_replogle_control_c_eval_worker.sh",
+      "retired_reason": "Unified evaluation entrypoint; active imports/commands migrated; archived 2026-11-23",
+      "retirement_archive": "artifacts/repository_cleanup/20261123_eval_entry_cleanup/scripts/workers/run_replogle_control_c_eval_worker.sh",
+      "retirement_sha256": "3c4a216f6e243261a7ddc4156e1fad4368c515b1c40fe58975ebbf5231493b9f"
+    },
+    "scripts/run_replogle_control_c_resume_worker.sh": {
+      "new": null,
+      "original_sha256": "8d65dc941b21df4a90791fa1b305475aa5329b115733647e231a36afe027f9ce",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/run_replogle_control_c_resume_worker.sh",
+      "retired_reason": "Completed one-off C checkpoint/resource migration"
+    },
+    "scripts/run_replogle_control_c_worker.sh": {
+      "new": "scripts/workers/run_replogle_control_c_worker.sh",
+      "original_sha256": "d127aeff43bdb3b113c8255a1e85c80db03e676fb5db2ac80d0557e0ca32ee3e",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/run_replogle_control_c_worker.sh",
+      "new_sha256": "0832e1f22fb4c30bec4d5051a64cb8617bb730f2adf6fa59acb1dd8935d29f71",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/workers/run_replogle_control_c_worker.sh",
+      "pre_consolidation_sha256": "f1266e55dd8c5cfe21d592349cd540f371e5d696707b91abb0a26fdd95a1b1f0"
+    },
+    "scripts/run_replogle_control_eval_worker.sh": {
+      "new": "scripts/workers/run_replogle_control_eval_worker.sh",
+      "original_sha256": "d5009f59f730087838db5d11bcfa13a4b4a7c993cc632bcd731a8c1acb786cfb",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/run_replogle_control_eval_worker.sh",
+      "new_sha256": "f6586178092f226a41e5081cf2fca2cdb5b58fa6ffe21b9328ceb58780fd1d45",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/workers/run_replogle_control_eval_worker.sh",
+      "pre_consolidation_sha256": "1c20ee0f796246e69ac35de5773be5aa85ede3bd51b2d736640efbafb4f99ae4"
+    },
+    "scripts/run_replogle_experiment.sh": {
+      "new": "scripts/launch/run_replogle_experiment.sh",
+      "original_sha256": "569094cd0e52760e9fb54469f08022cb196e8db2c2a082bd8a818f76394f9f18",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/run_replogle_experiment.sh",
+      "new_sha256": "46f34c65ed657503be33578fabcea908dcf04b71b1093cf0ccacfc96cd55e8e7"
+    },
+    "scripts/run_replogle_llm_cache_worker.sh": {
+      "new": "scripts/workers/run_replogle_llm_cache_worker.sh",
+      "original_sha256": "d7a102693f868211996d8944928832d44e06453c46a6f09ac63dbeed3f98b427",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/run_replogle_llm_cache_worker.sh",
+      "new_sha256": "d156f167f2c07a1bdac9de7ca900ce1c460da4ee9699175c34db4bd715eb2cc1"
+    },
+    "scripts/run_replogle_llm_pipeline.py": {
+      "new": "scripts/training/run_replogle_llm_pipeline.py",
+      "original_sha256": "30b02177182b1125de7dd965b6e62a71799f83a2bf7e82f02a0e1dbe57f25821",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/run_replogle_llm_pipeline.py",
+      "new_sha256": "7de832f9362208e5a5335acbe5d5faba1e0af69bf434b33e23ae2643765815fd"
+    },
+    "scripts/run_replogle_llm_worker.sh": {
+      "new": "scripts/workers/run_replogle_llm_worker.sh",
+      "original_sha256": "48b035afac239b3089415523553565e9f065123b5795289bd4c06a6231eae8c5",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/run_replogle_llm_worker.sh",
+      "new_sha256": "ab54f058582544728ad9bb293abe3db823646534f66bf953b464bf8254a44c22"
+    },
+    "scripts/run_replogle_stage1.sh": {
+      "new": "scripts/launch/run_replogle_stage1.sh",
+      "original_sha256": "6b2555cea21c7f3c04785dd5e117c26650f6966ebf98005b35aaddc8e0b48ca8",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/run_replogle_stage1.sh",
+      "new_sha256": "ef689f79f7800af02dc86752a1cd7ba6727e118364cf3d1905af790b7ab4899b"
+    },
+    "scripts/run_replogle_stage1_worker.sh": {
+      "new": "scripts/workers/run_replogle_stage1_worker.sh",
+      "original_sha256": "10f94e8be54c901bb3e39b79637b7f77cffb5e509b862ca30bbeab83a0fc5f79",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/run_replogle_stage1_worker.sh",
+      "new_sha256": "f37ab6be35790eac638731042fa175774c4ceac923411dee69505a487cdb6ca7"
+    },
+    "scripts/run_replogle_stage2.sh": {
+      "new": "scripts/launch/run_replogle_stage2.sh",
+      "original_sha256": "61814a38535ba3fe0e217e32959d2edd747c0ffeb7b76021aae99bfdb96d46ea",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/run_replogle_stage2.sh",
+      "new_sha256": "6bb209fee6dde4d675730afec483b5cf2339885f58554085ea73893383e99bb5"
+    },
+    "scripts/run_replogle_stage2_worker.sh": {
+      "new": "scripts/workers/run_replogle_stage2_worker.sh",
+      "original_sha256": "2a8236a6cdd018902f76219336c3e2997a5ce041a16ed131c4bfd364b4e3ea6f",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/run_replogle_stage2_worker.sh",
+      "new_sha256": "9837d94c41fd6f7d91821f626577a0163ec196c023d2a246a2f2badc1e9af00d"
+    },
+    "scripts/run_replogle_text_encoding_worker.sh": {
+      "new": null,
+      "original_sha256": "a50e3647776fd6d43f271e035f148b2cfc5eb3ce94a72a6fb6d4133913a6cd1e",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/run_replogle_text_encoding_worker.sh",
+      "retired_reason": "Cancelled separate text-embedding route"
+    },
+    "scripts/show_replogle_stage1_case.py": {
+      "new": "scripts/analysis/show_replogle_stage1_case.py",
+      "original_sha256": "e7813a348ec284344a2e0fda2cfd5fd12b88436a4b908ba424f76bcc27e45751",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/show_replogle_stage1_case.py",
+      "new_sha256": "eca07d99e0f9576bdd704dadca65e04d6b8c423f5a0e6b0ba3d2791b84999c8e"
+    },
+    "scripts/submit_replogle_control_ab.sh": {
+      "new": null,
+      "original_sha256": "8cfa1da82a15f269b5f7d4371146a522709450c71712cb52a6c21db48d683220",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/submit_replogle_control_ab.sh",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/launch/submit_replogle_control_ab.sh",
+      "pre_consolidation_sha256": "a78de90c3d6d0d0389416a4eeed34c56409f3f7a84e8bdc7816bc6304700246d",
+      "retired_path": "scripts/launch/submit_replogle_control_ab.sh",
+      "retired_reason": "Use unified Qwen submission with hepg2-a/hepg2-b/hepg2-c preset",
+      "retirement_archive": "artifacts/repository_cleanup/20261123_ab_c_launch_cleanup/scripts/launch/submit_replogle_control_ab.sh",
+      "retirement_sha256": "ed21293ada131601f92b8854dddc789c7978cd620c5068e5fa72bc132526c0ea"
+    },
+    "scripts/submit_replogle_control_baseline.py": {
+      "new": null,
+      "original_sha256": "c92f539555ba6b29c852dcc37d9dfd591ed81263ee064cae6d79f1efe18249d5",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/submit_replogle_control_baseline.py",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/launch/submit_replogle_control_baseline.py",
+      "pre_consolidation_sha256": "e2f9ff3d35363c837433b5bb805732f5399eddcb15b317a3bc5f4afa0738a4bd",
+      "retired_path": "scripts/launch/submit_replogle_control_baseline.py",
+      "retired_reason": "Replaced by submit_replogle_qwen --preset original-control1; pipeline adds --eval-after-training",
+      "retirement_archive": "artifacts/repository_cleanup/20261123_baseline_launch_cleanup/scripts/launch/submit_replogle_control_baseline.py",
+      "retirement_sha256": "1008f3e74208f1185bac858225c3dd82b331d245090af7648a077f6dba1fc1bd"
+    },
+    "scripts/submit_replogle_control_baseline.sh": {
+      "new": null,
+      "original_sha256": "5f4bc8f8b0d2200b4cf4043cc8c95325ae3a9abe12ae50d967c245608618850a",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/submit_replogle_control_baseline.sh",
+      "retired_path": "scripts/launch/submit_replogle_control_baseline.sh",
+      "retired_reason": "Replaced by submit_replogle_qwen --preset original-control1; pipeline adds --eval-after-training",
+      "retirement_archive": "artifacts/repository_cleanup/20261123_baseline_launch_cleanup/scripts/launch/submit_replogle_control_baseline.sh",
+      "retirement_sha256": "251334d8c00fd9a0a88a2904653aba568ddf51ad2b7622e49121c196a7945a62"
+    },
+    "scripts/submit_replogle_control_baseline_pipeline.sh": {
+      "new": null,
+      "original_sha256": "16da5de88a206c9c9d587c1a98893e05c83a423ce9d1c3792b4fd1d11888ed25",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/submit_replogle_control_baseline_pipeline.sh",
+      "retired_path": "scripts/launch/submit_replogle_control_baseline_pipeline.sh",
+      "retired_reason": "Replaced by submit_replogle_qwen --preset original-control1; pipeline adds --eval-after-training",
+      "retirement_archive": "artifacts/repository_cleanup/20261123_baseline_launch_cleanup/scripts/launch/submit_replogle_control_baseline_pipeline.sh",
+      "retirement_sha256": "16da5de88a206c9c9d587c1a98893e05c83a423ce9d1c3792b4fd1d11888ed25"
+    },
+    "scripts/submit_replogle_control_c.sh": {
+      "new": null,
+      "original_sha256": "27d75d19ef880da3819c3e1f7a087308c396988294e9699dc7bac993a9f88149",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/submit_replogle_control_c.sh",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/launch/submit_replogle_control_c.sh",
+      "pre_consolidation_sha256": "be782ff297770f6ef8d0e5794db75228ceff999c128831137b9d72c912ba111c",
+      "retired_path": "scripts/launch/submit_replogle_control_c.sh",
+      "retired_reason": "Use unified Qwen submission with hepg2-a/hepg2-b/hepg2-c preset",
+      "retirement_archive": "artifacts/repository_cleanup/20261123_ab_c_launch_cleanup/scripts/launch/submit_replogle_control_c.sh",
+      "retirement_sha256": "01eec211159b592088093f1e97c58bf92cce0c6e02a6a07df5109ddae33d1e17"
+    },
+    "scripts/submit_replogle_control_c_eval.py": {
+      "new": null,
+      "original_sha256": "4c4ac0f6657a2ecca5def70244bce767ec9fdde04af16fd842e68e8991cc1250",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/submit_replogle_control_c_eval.py",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/launch/submit_replogle_control_c_eval.py",
+      "pre_consolidation_sha256": "604dde5ef1d685178acf4c85ab7fc89aaccad11bee05fcaf0337ec3752bfbc60",
+      "retired_path": "scripts/launch/submit_replogle_control_c_eval.py",
+      "retired_reason": "Unified evaluation entrypoint; active imports/commands migrated; archived 2026-11-23",
+      "retirement_archive": "artifacts/repository_cleanup/20261123_eval_entry_cleanup/scripts/launch/submit_replogle_control_c_eval.py",
+      "retirement_sha256": "c1fb4e9e4ed168a4d00e393990641096d5e27dff9e0c7edf6130e5a0890a51fa"
+    },
+    "scripts/submit_replogle_control_c_resume.py": {
+      "new": null,
+      "original_sha256": "6c7577f052c9528c8c14add99b358765539867d9625834d59a5634f5bad068a4",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/submit_replogle_control_c_resume.py",
+      "retired_reason": "Completed one-off C checkpoint/resource migration"
+    },
+    "scripts/submit_replogle_control_eval.py": {
+      "new": "scripts/launch/submit_replogle_control_eval.py",
+      "original_sha256": "8a22dc33af4800560c72222721f00efbb784771bc6a716ea230fa17765bd3366",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/submit_replogle_control_eval.py",
+      "new_sha256": "813d1ada1ed128bd1d37cd030124abc3f841f43ab5668b7d1d0c7bb13381cc6d",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/launch/submit_replogle_control_eval.py",
+      "pre_consolidation_sha256": "d81d873d4cbad54b524113c7c61af7b841a35568b54e5015075f880260ee2ff7"
+    },
+    "scripts/submit_replogle_llm.sh": {
+      "new": "scripts/launch/submit_replogle_llm.sh",
+      "original_sha256": "e0c15218fb96889c091b9f57cfd1392120b8209317860fe53f1ae7a05eaef3ea",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/submit_replogle_llm.sh",
+      "new_sha256": "f384ab5eb5df876c0c65465d227c981f98add462756f549d5b8bf717b2eb3b1f"
+    },
+    "scripts/submit_replogle_stage1.sh": {
+      "new": "scripts/launch/submit_replogle_stage1.sh",
+      "original_sha256": "4cfa6c752dafd25a8c388efab6771107eef73ad3b3ba2be679c34e88ac08f093",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/submit_replogle_stage1.sh",
+      "new_sha256": "5625ec3769db9d5d6e29ac4e1bd4520c93901cd057da46574053d0d43c6cac62"
+    },
+    "scripts/submit_replogle_stage2.sh": {
+      "new": "scripts/launch/submit_replogle_stage2.sh",
+      "original_sha256": "44685cdd63079162f87d380ea2b41dc450b09ab0d6c07bd887673d31ab63cf78",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/submit_replogle_stage2.sh",
+      "new_sha256": "cf65053d43d01f6600de317c2ae41f4bc12623c277af5375e40c394dba1d7e69"
+    },
+    "scripts/submit_replogle_text_encoding.sh": {
+      "new": null,
+      "original_sha256": "ce5fc02c423877cf564124437225a4aebcddf107ee3af29d1b9c625b00d07451",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/submit_replogle_text_encoding.sh",
+      "retired_reason": "Cancelled separate text-embedding route"
+    },
+    "scripts/summarize_replogle_stage2.py": {
+      "new": "scripts/analysis/summarize_replogle_stage2.py",
+      "original_sha256": "b83672f9e14df1d0c6fd70ccf0b9154cbbdff8f844e41d68e73779182497f6b4",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/summarize_replogle_stage2.py",
+      "new_sha256": "a26753ab71f5220a197b88fad4eaec008bb6f1c0474d1b11c2cac54e5c4d0635"
+    },
+    "scripts/train.py": {
+      "new": "scripts/train.py",
+      "original_sha256": "ab2e25f74d5e59bbf6600cfee6754aa85099730483e54524e1db2f68d9ffa5f1",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/train.py",
+      "new_sha256": "ab2e25f74d5e59bbf6600cfee6754aa85099730483e54524e1db2f68d9ffa5f1"
+    },
+    "scripts/train_replogle_control_ab.py": {
+      "new": "scripts/training/train_replogle_control_ab.py",
+      "original_sha256": "87d997fdc50bfc995cfeaee3b1bfd9cf4ac346db47828d885037b90a8539be16",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/train_replogle_control_ab.py",
+      "new_sha256": "b1e625f23ae97dad1285f04986816db2e6d321a6f36406effe0e552010f87bd2",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/training/train_replogle_control_ab.py",
+      "pre_consolidation_sha256": "77a74cdc4b6689b8f8a3a1a07f86213575e64567c77f0af957cc4998a532e8c3"
+    },
+    "scripts/train_replogle_control_baseline.py": {
+      "new": "scripts/training/train_replogle_control_baseline.py",
+      "original_sha256": "792b3301d6656c2431bce257f90978c6d2deff58d1c254b6bfd5b3746d2dea1b",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/train_replogle_control_baseline.py",
+      "new_sha256": "1958f6eb611d181a95cc9f544b0fd5c88cc1a8b68ecc6e12eca1db1f555d3f51",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/training/train_replogle_control_baseline.py",
+      "pre_consolidation_sha256": "dc6521f24c9d473fa91fc5521ed2b2d6de1f6fa9da80f252411c12a70ca0f253"
+    },
+    "scripts/train_replogle_control_c.py": {
+      "new": "scripts/training/train_replogle_control_c.py",
+      "original_sha256": "2c7861faad7e90e696aa35488451beea392d897db9fc4d269e1be9fdb4abdb35",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/train_replogle_control_c.py",
+      "new_sha256": "bec085ab098e4cf7ef1bbfea5cef838633b4914ec524aa97286c667511daa358",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/training/train_replogle_control_c.py",
+      "pre_consolidation_sha256": "018a1f53043dd888de0ebc4fbdc6651a010ba937f8a0b7b3bb4071dcd9e81297"
+    },
+    "scripts/train_replogle_control_c_resume.py": {
+      "new": null,
+      "original_sha256": "ace8ed2dfa1bc3d1677ead37eec56d850d2601c8e2a25ec19f26747f40731c6c",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/train_replogle_control_c_resume.py",
+      "retired_reason": "Completed one-off C checkpoint/resource migration"
+    },
+    "scripts/train_replogle_llm.py": {
+      "new": "scripts/training/train_replogle_llm.py",
+      "original_sha256": "1c37bcbd351c3d61477c968e3ca2e7fc537f9bccc8d9c039e19c219a8fc9ddf1",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/train_replogle_llm.py",
+      "new_sha256": "f22a0192052392bc91fe781d1f97520f88c1b48297f24246b5210bc7b2a34afd",
+      "consolidation_archive": "artifacts/repository_cleanup/20261123_qwen_consolidation/scripts/training/train_replogle_llm.py",
+      "pre_consolidation_sha256": "4d0d06ffc05c3ae20e75cac8d173a4d1e3560b780bf9cb90922dbeeed344ea88"
+    },
+    "scripts/unpack_environment.py": {
+      "new": "scripts/environment/unpack_environment.py",
+      "original_sha256": "038ab4bbf6b13c84e3bf9446e125b3a7b4105351befcb8df17e78dd2eab17192",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/unpack_environment.py",
+      "new_sha256": "038ab4bbf6b13c84e3bf9446e125b3a7b4105351befcb8df17e78dd2eab17192"
+    },
+    "scripts/validate_replogle_experiment.py": {
+      "new": "scripts/checks/validate_replogle_experiment.py",
+      "original_sha256": "6091d084e010d2ee78b73e4e4beafbb9376f7b3dceea01b7be35258ae351bf52",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/validate_replogle_experiment.py",
+      "new_sha256": "6d38d673c90158c140ff0f925a020087a29ba12f8e9ac503d2cd0d1653991dab"
+    },
+    "scripts/validate_replogle_experiment_stages.py": {
+      "new": "scripts/checks/validate_replogle_experiment_stages.py",
+      "original_sha256": "293f95b413513b0d566c793933ce9c9ebb56c7b23bfa9436deca570f0721a7d3",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/validate_replogle_experiment_stages.py",
+      "new_sha256": "100cefe6b2999a3b1816940e8bc4d36b28bbfa9b6525137476dd7f4dd67137ea"
+    },
+    "scripts/validate_replogle_stage1.py": {
+      "new": "scripts/checks/validate_replogle_stage1.py",
+      "original_sha256": "27265236592983138aacd55169ee72a41310776f391555294b5dd17964cf934e",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/validate_replogle_stage1.py",
+      "new_sha256": "5506d796188d019b8d786f13cf622e92fcd4450865d254ac68e2cd059840b677"
+    },
+    "scripts/validate_replogle_stage2.py": {
+      "new": "scripts/checks/validate_replogle_stage2.py",
+      "original_sha256": "d68093003fd81aa662ea211f83e33e89a3ef160b0d9201b75a1d05b711bd093a",
+      "archive": "artifacts/repository_cleanup/20261123_scripts_layout/original/scripts/validate_replogle_stage2.py",
+      "new_sha256": "beca587875fd4fe7311b9f063a067ee6fc7101f09d8d0abc8e86ae8a76cef092"
+    }
+  },
+  "shared_files": {
+    "scripts/_bootstrap.py": "84487445d7999828885d5ff220a56901cbc185de6e9e55113053a086cbe33a10",
+    "scripts/workers/run_replogle_qwen_eval.sh": "67d76a77071c3d9b889435ea000fd7e5d9ab33c25a3fe9774718b9c07c1c7506",
+    "scripts/workers/run_replogle_qwen_worker.sh": "fe4a57a8331b14c59adccaf49fe4f303b9b040a69d4f4ef1b8fdda5e01cb55e6",
+    "scripts/lib/replogle_qwen_callbacks.py": "9a4e9b9a82875df9f86d09041cc7f13633ad88bdae873577a472ef644c97076a",
+    "scripts/lib/replogle_qwen_inference.py": "7f4c869bf89193446857565b1be58ad487d725178a9da55e21e4a965198608ba",
+    "scripts/lib/replogle_qwen_legacy_eval.py": "98c33c477e27ecbe67d8b2c5fcba66baf63d09a8167f6833ce29e7b2c6b6b00e",
+    "scripts/lib/replogle_qwen_eval_request.py": "69703a9a31c2ddea14327a57520d81bd1363c9e0cbebc3fcde0560f0eb637ac1",
+    "scripts/lib/replogle_qwen_metrics.py": "819902f3c58cb02b1242bd993b45e098a864c94b6a0635a6f32bbc2d0bb27543",
+    "scripts/lib/replogle_qwen.py": "b5e8511e5f05e626534f2fb15f0e04a88621bae941c6413de5cd69a6f19fb194",
+    "scripts/launch/submit_replogle_qwen.sh": "677c1280aeec4e06be0d9dee9171a3fbb58c7029f49c3731458fa3c7747f3f6d",
+    "scripts/launch/submit_replogle_qwen_eval.sh": "cd98c42e1205cb46463254b09b77e26922b22bfedf00f5ab0d50b4dcf9ed3a6f",
+    "scripts/launch/submit_replogle_qwen.py": "6d3335978ccbdf916db26ac964107004da3e529dbb1322067e28d2907e48ed98",
+    "scripts/launch/submit_replogle_control_eval.sh": "55038a85e7226f1606c1856ca43b7d5bf3c63cdf094a2173b714aff3d653d513",
+    "scripts/launch/submit_replogle_qwen_eval.py": "e76ef65a55399614e1a2841163f336bc53e6e077d258a5da5a9d8b39045b7da9",
+    "scripts/evaluation/eval_replogle_qwen.py": "88eed073fc86210eb79bfdda74978dfbb6976b9fee1a1d326857e23839b4c05d",
+    "scripts/checks/check_script_layout.py": "820c1674a0543eb7a3dad5bc7f6167fbddd43537fe384a755058b344ae0bfccb",
+    "scripts/checks/check_replogle_qwen.py": "c45381499c890080c3ab618f96b6f0d27ff767357dd59aef92d200ca500f5402",
+    "scripts/training/train_replogle_qwen.py": "d227dda5520b177d74e88bd4c5ce31e374d1f5591f44684808bc5f97837d7c06",
+    "scripts/lib/replogle_qwen_config.py": "9d6d260a64bea47852b702a2853d59dde99174e7c3986f0f0d46add2014ee87c",
+    "scripts/environment/launch_worker.sh": "516d26dba8f5de0d5a156ef127c7625c7e5b42a133ea2a27bee65c2a482cbc1a",
+    "scripts/environment/unpack_environment.py": "038ab4bbf6b13c84e3bf9446e125b3a7b4105351befcb8df17e78dd2eab17192",
+    "scripts/environment/pack_environment.sh": "d17f070001c110e33b53ec35272443d3eaacd7eb807319cededa66148fbddee6",
+    "scripts/environment/check_environment.py": "27906cad431aec705c76e8298b614209802d729932626901fbe4697354838c55",
+    "scripts/environment/requirements-qwen-hopper-overlay.txt": "a074f22b0e47dc0cc216a240de0882aeed6d246537c6a67b9f388a59f077485d"
+  },
+  "consolidation": {
+    "archive": "artifacts/repository_cleanup/20261123_qwen_consolidation",
+    "changed_files": [
+      "scripts/evaluation/eval_replogle_control_ab.py",
+      "scripts/evaluation/eval_replogle_control_baseline.py",
+      "scripts/evaluation/eval_replogle_control_c.py",
+      "scripts/workers/run_replogle_control_ab_worker.sh",
+      "scripts/workers/run_replogle_control_baseline_eval.sh",
+      "scripts/workers/run_replogle_control_baseline_worker.sh",
+      "scripts/workers/run_replogle_control_c_eval_worker.sh",
+      "scripts/workers/run_replogle_control_c_worker.sh",
+      "scripts/workers/run_replogle_control_eval_worker.sh",
+      "scripts/launch/submit_replogle_control_ab.sh",
+      "scripts/launch/submit_replogle_control_baseline.py",
+      "scripts/launch/submit_replogle_control_c.sh",
+      "scripts/launch/submit_replogle_control_c_eval.py",
+      "scripts/launch/submit_replogle_control_eval.py",
+      "scripts/training/train_replogle_control_ab.py",
+      "scripts/training/train_replogle_control_baseline.py",
+      "scripts/training/train_replogle_control_c.py",
+      "scripts/training/train_replogle_llm.py"
+    ],
+    "date": "2026-11-23",
+    "historical_manifests_modified": false
+  },
+  "evaluation_consolidation": {
+    "archive": "artifacts/repository_cleanup/20261123_evaluation_consolidation",
+    "changes": [
+      {
+        "file": "scripts/workers/run_replogle_control_eval_worker.sh",
+        "archive": "artifacts/repository_cleanup/20261123_evaluation_consolidation/scripts/workers/run_replogle_control_eval_worker.sh",
+        "before": "896d3d10e376661b550bf72c5c6ad2a6ef91dd0186e09b59efd1b68ff8f4d83e",
+        "after": "4aff98595b9a664bfac3e93a0632551f692904dd5450a09ac66f4071b2f0ef82"
+      },
+      {
+        "file": "scripts/launch/submit_replogle_control_eval.py",
+        "archive": "artifacts/repository_cleanup/20261123_evaluation_consolidation/scripts/launch/submit_replogle_control_eval.py",
+        "before": "a93757b67314e13c2d2725fd51b226a230b327671ad9490dac3038d556431b99",
+        "after": "f079983ffb2e6c532aea5478bd4483fa19762633703e00754ff31e624ac1e2e9"
+      },
+      {
+        "file": "scripts/evaluation/eval_replogle_qwen.py",
+        "archive": "artifacts/repository_cleanup/20261123_evaluation_consolidation/scripts/evaluation/eval_replogle_qwen.py",
+        "before": "46a875ddb0f74f8caac83d829e11812b402e922972154f73beb63821f84a5ac7",
+        "after": "102e8c8ba11e358bb7182a9394365cfea8e7a56e9df78693e9e08b93a6422268"
+      },
+      {
+        "file": "scripts/evaluation/eval_replogle_control_ab.py",
+        "archive": "artifacts/repository_cleanup/20261123_evaluation_consolidation/scripts/evaluation/eval_replogle_control_ab.py",
+        "before": "810446ffd75dae1536587de3b1b679d75bc8b4da44672e024522d4f0dc673034",
+        "after": "b2df9c9ec9204ffcd7cf2fff0f2c4fa636880f7058e3d7740330100d0a97bb22"
+      },
+      {
+        "file": "scripts/evaluation/eval_replogle_llm.py",
+        "archive": "artifacts/repository_cleanup/20261123_evaluation_consolidation/scripts/evaluation/eval_replogle_llm.py",
+        "before": "5596b28139a5a2a7baeedda0d1c6baf609074d3199be1d8f5408070cba86f6ac",
+        "after": "e641124c1d641f67c9fc826a49645e159ebc9d46cf76149f1094400070387066"
+      },
+      {
+        "file": "scripts/evaluation/eval_replogle_control_c.py",
+        "archive": "artifacts/repository_cleanup/20261123_evaluation_consolidation/scripts/evaluation/eval_replogle_control_c.py",
+        "before": "19e3a33bc9af03e68a6ec2457c86f83e6ccdae55669026478a0ff5447192ca28",
+        "after": "936831fbc796d0b855ac8cc7d550b00139162e2991e74f691fa7286ae9a9c4fa"
+      }
+    ],
+    "historical_manifests_modified": false
+  },
+  "evaluation_entry_cleanup": {
+    "archive": "artifacts/repository_cleanup/20261123_eval_entry_cleanup",
+    "retired_files": [
+      "scripts/evaluation/eval_replogle_control_ab.py",
+      "scripts/evaluation/eval_replogle_control_c.py",
+      "scripts/evaluation/eval_replogle_control_baseline.py",
+      "scripts/evaluation/eval_replogle_llm.py",
+      "scripts/launch/submit_replogle_control_c_eval.py",
+      "scripts/workers/run_replogle_control_c_eval_worker.sh",
+      "scripts/workers/run_replogle_control_baseline_eval.sh"
+    ],
+    "historical_manifests_modified": false
+  },
+  "comment_updates": [
+    {
+      "archive": "artifacts/repository_cleanup/20261123_usage_comments",
+      "changes": [
+        {
+          "file": "scripts/launch/submit_replogle_control_eval.sh",
+          "before": "d40d14a73a7a39644d158e3c20ab02da4c3b6caddda818f635d4fb13dc466e52",
+          "after": "0fb0cf4ff849456fa8f548a5281798520e5348df93c414f9ef25ed77c0551c5c"
+        },
+        {
+          "file": "scripts/launch/submit_replogle_qwen.sh",
+          "before": "585170e349ecdaedf4287a1e97c3137fe6633113df391ff97b27959ec5f08303",
+          "after": "52d47694a673bcd813655ea9aa011739ab8f66bde55d07f892fc6000326b412c"
+        },
+        {
+          "file": "scripts/launch/submit_replogle_control_eval.py",
+          "before": "f079983ffb2e6c532aea5478bd4483fa19762633703e00754ff31e624ac1e2e9",
+          "after": "03db848fad0a0df576cc4f2cc64004b2bf27d9ed1291e80ab08338a563c3deaa"
+        },
+        {
+          "file": "scripts/launch/submit_replogle_qwen.py",
+          "before": "68f39136ef124f9f27c20dcbe4effd378f708da3f1a627da1abc4f4f6ef9191f",
+          "after": "38a21d883daa71ed5a58c3b4d507643cd612315bb886f992ecddbbfd6700c5ad"
+        },
+        {
+          "file": "scripts/workers/run_replogle_control_eval_worker.sh",
+          "before": "4aff98595b9a664bfac3e93a0632551f692904dd5450a09ac66f4071b2f0ef82",
+          "after": "0c637f2656379cfdd2cd2f56c1a5a5e88e201e9a1d27b1e62c58deab9b287ef7"
+        },
+        {
+          "file": "scripts/workers/run_replogle_qwen_worker.sh",
+          "before": "383b577cb5ada489cfcfb2576babd832158eecb8ef730f826802d74f5e6c623a",
+          "after": "f9d4393ea31b484b5f17e4c3e17d052582255da0972cc0bf867ac8010009c8f4"
+        },
+        {
+          "file": "scripts/workers/run_replogle_qwen_eval.sh",
+          "before": "00948390d84ceaaecc32abf75f9b185051df9577a7599ac23c409b8d9829cdaa",
+          "after": "026c2ec006e5f1dcd2a99039ebfb17bcd4fdc48a5f892973b854cd6ae8cfadf3"
+        },
+        {
+          "file": "scripts/training/train_replogle_qwen.py",
+          "before": "799eb1e5abdc82c966e5b951a2038ac2640c45e1e3dd3d0f5f13018516a27bd2",
+          "after": "d7a5bde03c9550108899a0d09068a89e50dcfcd14feb067125aba3ec5ac931cd"
+        },
+        {
+          "file": "scripts/evaluation/eval_replogle_qwen.py",
+          "before": "102e8c8ba11e358bb7182a9394365cfea8e7a56e9df78693e9e08b93a6422268",
+          "after": "70ad06f90c43b742be225102c1745b4b20fde29776c25a29d546373d24675a91"
+        },
+        {
+          "file": "scripts/lib/replogle_qwen.py",
+          "before": "f3e2bf523cdcd47962d5fccf7f361483df3b15936184570309b7291e129cdb5c",
+          "after": "7d1747dced6b4f3e1bf0039297b8ac3733b01e48282af966544d247877c21b66"
+        }
+      ],
+      "executable_code_unchanged": true
+    },
+    {
+      "archive": "artifacts/repository_cleanup/20261123_short_usage",
+      "changes": [
+        {
+          "file": "scripts/launch/submit_replogle_qwen.sh",
+          "before": "52d47694a673bcd813655ea9aa011739ab8f66bde55d07f892fc6000326b412c",
+          "after": "b560d28f850bfaebadb938ad635d691c075807f02f85bbae834530acda79f4ac"
+        },
+        {
+          "file": "scripts/launch/submit_replogle_control_eval.sh",
+          "before": "0fb0cf4ff849456fa8f548a5281798520e5348df93c414f9ef25ed77c0551c5c",
+          "after": "bb8fbe0341d72e9aab47b3319a658ae975d3dbf212c20cf76c9fd9195e0fddce"
+        },
+        {
+          "file": "scripts/launch/submit_replogle_qwen.py",
+          "before": "38a21d883daa71ed5a58c3b4d507643cd612315bb886f992ecddbbfd6700c5ad",
+          "after": "5bd1dec34cbfd332b179ded011af261d488ddfa1ffa9ac8fd7f7461a59a5257f"
+        },
+        {
+          "file": "scripts/launch/submit_replogle_control_eval.py",
+          "before": "03db848fad0a0df576cc4f2cc64004b2bf27d9ed1291e80ab08338a563c3deaa",
+          "after": "813d1ada1ed128bd1d37cd030124abc3f841f43ab5668b7d1d0c7bb13381cc6d"
+        },
+        {
+          "file": "scripts/workers/run_replogle_control_eval_worker.sh",
+          "before": "0c637f2656379cfdd2cd2f56c1a5a5e88e201e9a1d27b1e62c58deab9b287ef7",
+          "after": "f6586178092f226a41e5081cf2fca2cdb5b58fa6ffe21b9328ceb58780fd1d45"
+        },
+        {
+          "file": "scripts/workers/run_replogle_qwen_worker.sh",
+          "before": "f9d4393ea31b484b5f17e4c3e17d052582255da0972cc0bf867ac8010009c8f4",
+          "after": "fe4a57a8331b14c59adccaf49fe4f303b9b040a69d4f4ef1b8fdda5e01cb55e6"
+        },
+        {
+          "file": "scripts/workers/run_replogle_qwen_eval.sh",
+          "before": "026c2ec006e5f1dcd2a99039ebfb17bcd4fdc48a5f892973b854cd6ae8cfadf3",
+          "after": "f8e7ae074ab8364932c478323247e62ac1563a321ec82792c606323e1732cbcd"
+        },
+        {
+          "file": "scripts/training/train_replogle_qwen.py",
+          "before": "d7a5bde03c9550108899a0d09068a89e50dcfcd14feb067125aba3ec5ac931cd",
+          "after": "d227dda5520b177d74e88bd4c5ce31e374d1f5591f44684808bc5f97837d7c06"
+        },
+        {
+          "file": "scripts/evaluation/eval_replogle_qwen.py",
+          "before": "70ad06f90c43b742be225102c1745b4b20fde29776c25a29d546373d24675a91",
+          "after": "190793a4d8d30ef7d55c4158a4dc7a19c1493ffc799764994eff82147b6b4dc5"
+        },
+        {
+          "file": "scripts/lib/replogle_qwen.py",
+          "before": "7d1747dced6b4f3e1bf0039297b8ac3733b01e48282af966544d247877c21b66",
+          "after": "55cec73f1f8d588ce439748093b8e2452ee5656c5d434882c90d2b60868134c7"
+        }
+      ],
+      "executable_code_unchanged": true
+    }
+  ],
+  "baseline_launch_cleanup": {
+    "archive": "artifacts/repository_cleanup/20261123_baseline_launch_cleanup",
+    "retired_files": [
+      "scripts/launch/submit_replogle_control_baseline.sh",
+      "scripts/launch/submit_replogle_control_baseline_pipeline.sh",
+      "scripts/launch/submit_replogle_control_baseline.py"
+    ],
+    "historical_manifests_modified": false
+  },
+  "standalone_qwen_eval": {
+    "archive": "artifacts/repository_cleanup/20261123_standalone_qwen_eval",
+    "entrypoint": "scripts/launch/submit_replogle_qwen_eval.sh",
+    "historical_manifests_modified": false
+  },
+  "ab_c_launch_cleanup": {
+    "archive": "artifacts/repository_cleanup/20261123_ab_c_launch_cleanup",
+    "retired_files": [
+      "scripts/launch/submit_replogle_control_ab.sh",
+      "scripts/launch/submit_replogle_control_c.sh"
+    ],
+    "historical_manifests_modified": false
+  }
+}

@@ -1,0 +1,55 @@
+# Derived from config/prior/reploall-autoregressive-fsq-mse.yaml.
+run_name: replogle-stage2-ar-fsq-mse-seed420
+seed: 420
+work_dir: outputs/replogle_stage2
+n_iters: 75000
+learning_rate: 0.0002
+warmup_steps: 3000
+grad_clip: 1.0
+log_freq: 100
+eval_freq: 5000
+save_freq: 5000
+lr_schedule: cosine
+max_val_iters: 500
+dataset:
+  h5ad_paths:
+  - datasets/replogle/K562_essential_raw_singlecell_01.h5ad
+  - datasets/replogle/hepg2_raw_singlecell_01.h5ad
+  - datasets/replogle/jurkat_raw_singlecell_01.h5ad
+  - datasets/replogle/rpe1_raw_singlecell_01.h5ad
+  gene_order_path: assets/replogle_scldm2k_gene_order.ensembl.txt
+  num_hvg: 2000
+  split_path: assets/scldm_replogle_test.json
+  ctrl_label: non-targeting
+  min_genes: 200
+  min_cells: 3
+  target_sum: null
+  apply_normalize: true
+  apply_log1p: true
+  use_binning: none
+  pert_mapping_path: datasets/competition_support_set/ESM2_replogle_symbol_aligned.pt
+  batch_size: 128
+  num_workers: 0
+  load_lazily: false
+  deg_table_path: outputs/replogle_stage1/replogle-stage1-fsq-mse-seed401-smoke/deg_table.pt
+model:
+  type: autoregressive
+  vae_path: outputs/replogle_stage1/replogle-stage1-fsq-mse-seed401
+  do_celltype_cond: true
+  transformer:
+    type: dit
+    d_model: 384
+    nhead: 8
+    num_layers: 6
+    dim_feedforward: 1536
+    causal_input_mask: true
+  output_head:
+    type: cross_entropy
+  do_pert_cond: true
+  pert_cond_source: projected
+wandb:
+  enabled: true
+  project: sc_evae
+prefix_run_name_with_datetime: false
+weight_decay: 0.001
+mixed_precision: bf16

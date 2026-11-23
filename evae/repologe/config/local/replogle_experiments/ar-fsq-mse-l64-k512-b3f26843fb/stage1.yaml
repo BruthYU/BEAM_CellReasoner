@@ -1,0 +1,102 @@
+dataset:
+  apply_log1p: true
+  apply_normalize: true
+  batch_size: 128
+  ctrl_label: non-targeting
+  ctrl_labels: []
+  deg_table_path: outputs/replogle_stage1/replogle-stage1-fsq-mse-seed401-smoke/deg_table.pt
+  donor_col: null
+  gene_order_path: assets/replogle_scldm2k_gene_order.ensembl.txt
+  h5ad_path: ''
+  h5ad_paths:
+  - datasets/replogle/K562_essential_raw_singlecell_01.h5ad
+  - datasets/replogle/hepg2_raw_singlecell_01.h5ad
+  - datasets/replogle/jurkat_raw_singlecell_01.h5ad
+  - datasets/replogle/rpe1_raw_singlecell_01.h5ad
+  load_lazily: false
+  min_cells: 3
+  min_genes: 200
+  num_hvg: 2000
+  num_workers: 0
+  obs_filters: {}
+  pert_col: gene
+  pert_mapping_path: null
+  split_path: assets/scldm_replogle_test.json
+  target_sum: null
+  use_binning: none
+  val_frac: 0.0
+  val_pert_frac: 0.1
+dry_run: false
+eval_freq: 5000
+grad_clip: 5.0
+learning_rate: 0.0006
+log_freq: 100
+lr_schedule: cosine
+max_val_iters: null
+mixed_precision: bf16
+model:
+  classifier_hidden: []
+  classifier_weight: 1.0
+  decoder:
+    activation: gelu
+    attn_dropout: 0.1
+    causal_input_mask: false
+    d_model: 256
+    dim_feedforward: 1024
+    layer_norm_eps: 1.0e-05
+    nhead: 8
+    num_layers: 4
+    type: cross_attention
+  do_celltype_cond: false
+  do_pert_cond: false
+  encoder:
+    activation: gelu
+    attn_dropout: 0.1
+    causal_input_mask: false
+    d_model: 256
+    dim_feedforward: 1024
+    layer_norm_eps: 1.0e-05
+    nhead: 8
+    num_layers: 4
+    type: cross_attention
+  input_head:
+    is_count_discrete: false
+    type: mlp
+  is_count_discrete: false
+  max_count: null
+  num_cell_types: 4
+  num_genes: 2000
+  num_latent_tokens: 64
+  num_perts: 2396
+  output_head:
+    type: mse
+  pert_cond_source: projected
+  pert_emb_dim: null
+  quantizer:
+    codebook_size: 512
+    fsq_level:
+    - 8
+    - 8
+    - 8
+    type: fsq
+  regressor_hidden: []
+  regressor_weight: 1.0
+  train_pert_classifier: false
+  train_pert_regressor: false
+  type: vae
+n_iters: 75000
+prefix_run_name_with_datetime: false
+profile: false
+profile_n_steps: 500
+profile_warmup_steps: 50
+run_name: replogle-stage1-fsq-mse-seed401
+save_freq: 5000
+seed: 401
+wandb:
+  artifact_freq: 10000
+  enabled: true
+  entity: null
+  project: sc_evae
+warmup_steps: 2500
+weight_decay: 0.001
+work_dir: outputs/replogle_stage1
